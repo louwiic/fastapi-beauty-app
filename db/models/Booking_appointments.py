@@ -42,4 +42,6 @@ class Booking(Timestamp, Base):
     id = Column(Integer, primary_key=True, index=True)
     booking_ref = Column(String(150),  nullable=False)
     
+    order = relationship("Order", back_populates="user_booking")
+    
     #appointment_infos = relationship("Booking_appointment", back_populates='booking_info')

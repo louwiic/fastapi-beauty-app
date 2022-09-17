@@ -33,6 +33,7 @@ class User(Timestamp, Base):
     is_active = Column(Boolean, default=True)
     
     etablissement = relationship("Etablissement", uselist=False, back_populates="etablissement_user")
+    order = relationship("Order", back_populates="user_order")
 
 
     #etablissement = relationship(Etablissement, back_populates="user_etablissement", uselist=False)
