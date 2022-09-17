@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "beauty-app-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["loic_dev974 <loicbatonnet.dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "beauty_app_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.1"
+SQLAlchemy-Utils = "^0.38.3"
+psycopg2-binary = "^2.9.3"
+alembic = "^1.8.1"
+asyncpg = "^0.26.0"
+flake8 = "^5.0.4"
+black = "^22.8.0"
+pre-commit = "^2.20.0"
+uvicorn = "^0.18.3"
+fastapi = "^0.81.0"
+python-multipart = "^0.0.5"
+python-decouple = "^3.6"
+SQLAlchemy = "^1.4.41"
+passlib = "^1.7.4"
+jose = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
